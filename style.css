@@ -1,0 +1,98 @@
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#tudo {
+    margin: auto;
+}
+
+#tela1 {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(105, 105, 105);
+}
+
+.item {
+    margin: auto;
+    border: 2px rgb(255, 0, 0) dotted;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#abrir {
+    border: 2px rgb(8, 126, 14) dotted;
+}
+
+#porta {
+    margin: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+#tela2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(cazuzu.gif);
+    background-repeat: repeat;
+    animation: wave 1s infinite;
+    background-size: 400px 200px;
+    display: none;
+}
+
+#cima {
+    display: flex;
+    flex-direction: column;
+}
+
+#b1 {
+    opacity: 1;
+}
+
+#b2 {
+    opacity: 0;
+}
+
+#b3 {
+    opacity: 0;
+}
+
+#b4 {
+    opacity: 0;
+}
